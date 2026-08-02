@@ -1005,29 +1005,34 @@ LIGHTNING
         text-align: center;
     }
 
-    /* Pin the navbar to the bottom of the screen on mobile */
+    /* Pin a smaller navbar to the bottom of the screen on mobile */
     header {
         position: fixed;
-        bottom: 15px;
+        bottom: 10px;
         top: auto;
         width: 100%;
         z-index: 1000;
     }
 
     .navbar {
-        width: 90%;
-        padding: 12px 20px;
+        width: 85%;
+        max-width: 400px;
+        margin: auto;
+        padding: 8px 16px; /* Reduced padding to make it smaller */
         flex-direction: row;
         justify-content: space-around;
+        border: 3px solid #151515; /* Slightly thinner border */
+        border-radius: 16px;
         box-shadow: 4px 4px 0 #151515;
     }
 
     .nav-links {
-        gap: 20px;
+        gap: 15px;
     }
 
     .nav-links a {
-        font-size: 16px;
+        font-size: 14px; /* Smaller font size for mobile links */
+        font-weight: 600;
     }
 
     /* Center the hero section layout and content */
